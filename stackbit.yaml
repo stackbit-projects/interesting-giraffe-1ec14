@@ -1,0 +1,124 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  journal:
+    type: page
+    label: Journal
+    folder: _journals
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: author
+        label: Author
+  note:
+    type: page
+    label: Note
+    folder: _notes
+    match: '*'
+    fields:
+      - type: string
+        name: tags
+        label: Tags
+      - type: boolean
+        name: curated
+        label: Curated
+  page:
+    type: page
+    label: Page
+    folder: _pages
+    match:
+      - about.md
+      - archive.md
+      - categories.md
+      - tags.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: string
+        name: content-type
+        label: Content Type
+  page_1:
+    type: page
+    label: Page 1
+    match:
+      - _pages/dates.md
+      - _posts/2020-11-01-welcome-to-jekyll.markdown
+      - _posts/example_posts/2020-10-25-the-duality-of-purpose-and-work.md
+      - >-
+        _posts/example_posts/2020-10-26-disrupting-the-attention-based-economy.md
+      - _posts/example_posts/2020-10-27-my-writing-process.md
+      - _posts/example_posts/2020-10-31-markdown-syntax-preview.md
+      - _posts/example_posts/2020-11-02-a-glorious-example-post.md
+      - >-
+        _posts/example_posts/2020-11-03-a-comprehensive-guide-to-self-learning.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: string
+        name: content-type
+        label: Content Type
+      - type: date
+        name: date
+        label: Date
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: string
+        name: author
+        label: Author
+      - type: image
+        name: avatar
+        label: Avatar
+      - type: string
+        name: category
+        label: Category
+      - type: list
+        name: categories
+        label: Categories
+        items:
+          type: string
+  page_2:
+    type: page
+    label: Page 2
+    folder: _pages
+    match:
+      - journals.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+  page_3:
+    type: page
+    label: Page 3
+    folder: _pages
+    match:
+      - notes.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: permalink
+        label: Permalink
