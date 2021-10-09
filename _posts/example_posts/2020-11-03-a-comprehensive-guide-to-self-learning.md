@@ -1,6 +1,6 @@
 ---
 title: A Comprehensive Guide to Self-Learning
-author: Reid Doe
+author: Jadevilson Cruz
 avatar: assets/img/common/reid-avatar.png
 categories:
   - How-To
