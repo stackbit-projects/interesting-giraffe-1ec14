@@ -1,5 +1,5 @@
 ---
-title: A Comprehensive Guide to Self-Learning
+title: Professor
 author: Jadevilson Cruz
 avatar: assets/img/common/reid-avatar.png
 categories:
